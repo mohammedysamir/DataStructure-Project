@@ -35,8 +35,8 @@ void removelast(){
 		front = last = NULL;
 	}
 	else {
-		Node<T>** current = front->next;
-		Node<T>** pre = front;
+		Node<T>* current = front->next;
+		Node<T>* pre = front;
 		while (current != last)
 		{
 			pre = current;
@@ -176,5 +176,6 @@ public:
 	Node<T>* getlast() { return last; }
 	static void concatenate(Node<T>* a, Node<T>* b) {
 		a->next = b;
+		LinkedList::print(a);
 	}
 };
