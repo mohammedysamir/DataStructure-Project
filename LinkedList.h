@@ -156,14 +156,11 @@ public:
 		Node<T>* pre = front;
 		Node<T>* current = front->next;
 		for (int i = 1; i < index; i++)				//move current
-		{
+		{	pre = current;
 			current = current->next;
-		}
-		pre = current;
-		current = current->next;
 		pre->next = current->next;
 		delete current;
-	}
+	    }
 	}
 	static void print(Node<T>* f) {
 		while (f != NULL) {
