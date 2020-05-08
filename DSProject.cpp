@@ -11,5 +11,14 @@ int main()
 	second.insert(4);
 	LinkedList<int>::concatenate(first.getfront(), second.getfront());
 	LinkedList<int>::print(first.getfront());
+	first.deletepos(1);
+	LinkedList<int>::print(first.getfront());
+	first.deleteval(20);
+	LinkedList<int>::print(first.getfront());
+	first.insertpos(30,1);
+	LinkedList<int>::print(first.getfront());
+	first.deletepos(10);
+	first.insertpos(40,11);
+	return 0;
 }
 
